@@ -1,0 +1,59 @@
+create database projects_hr;
+
+use projects_hr;
+
+select * from hr;
+
+-- data cleaning & preprocessing --
+alter table hr
+change column ï»¿id emp_id varchar (20) null;
+
+desc hr; 
+
+set sql_safe_updates=0;
+
+-- change the date format & datatype of birthdate column-- 
+
+update hr
+set birthdate= case
+      when birthdate like '%/%' then date_format(str_to_date(birthdate, '%m/%d/%Y'), '%Y-%m-%d')
+      when birthdate like '%-%' then date_format(str_to_date(birthdate, '%m-%d-%Y'), '%Y-%m-%d')
+      else null 
+      end;
+
+alter table hr modify column birthdate date ;
+
+-- change the date format & datatype of hire_date column-- 
+
+update hr
+set hire_date= case
+      when hire_date like '%/%' then date_format(str_to_date(hire_date, '%m/%d/%Y'), '%Y-%m-%d')
+      when hire_date like '%-%' then date_format(str_to_date(hire_date, '%m-%d-%Y'), '%Y-%m-%d')
+      else null 
+      end; 
+
+alter table hr modify column hire_date date ;
+
+-- change the date format & datatype of termdate column-- 
+
+update hr
+set termdate=  DATE(str_to_date(termdate, '%Y-%m-%d %H:%i:%s UTC'))
+where termdate is not null and termdate !='';
+
+update hr 
+set termdate= null
+where termdate=''; 
+
+alter table hr
+modify column termdate date;
+
+-- lets create an age column --
+
+alter table hr add column age int;
+
+update hr 
+set age= timestampdiff(year, birthdate, curdate());
+
+select * from hr;
+
+select min(age), max(age) from hr;
