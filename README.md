@@ -1,6 +1,6 @@
 # HR-Dashboard-MySQL-PowerBI
 
-<h2> Here's the Interactive Project Dashboard link--> https://www.novypro.com/profile_projects/rushikeshmane </h2>
+<h2> Here's the Interactive Project Dashboard link--> https://www.novypro.com/project/hr-analysis---mysql----powerbi--excel </h2>
 
 <img src="https://github.com/Rushikeshvmane/HR-Analysis/assets/141236953/acc2a0bc-1b4c-46c5-a73c-0b66ec320a1b" height="100%" width="100%"/>
 
