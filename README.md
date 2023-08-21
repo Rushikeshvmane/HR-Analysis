@@ -2,7 +2,8 @@
 
 <h2> Here's the Interactive Project Dashboard link--> https://www.novypro.com/profile_projects/rushikeshmane </h2>
 
-![image](https://user-images.githubusercontent.com/56026296/229609893-b7b1f261-5941-45af-8322-1ccb2535d36b.png)
+<img src="https://github.com/Rushikeshvmane/HR-Analysis/assets/141236953/acc2a0bc-1b4c-46c5-a73c-0b66ec320a1b" height="100%" width="100%"/>
+
 
 ## Data Used
 
