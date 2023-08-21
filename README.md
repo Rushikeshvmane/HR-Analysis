@@ -1,5 +1,7 @@
 # HR-Dashboard-MySQL-PowerBI
 
+<h2> Here's the Interactive Project Dashboard link--> https://www.novypro.com/profile_projects/rushikeshmane </h2>
+
 ![image](https://user-images.githubusercontent.com/56026296/229609893-b7b1f261-5941-45af-8322-1ccb2535d36b.png)
 
 ## Data Used
